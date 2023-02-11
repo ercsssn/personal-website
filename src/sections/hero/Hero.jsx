@@ -1,8 +1,15 @@
 import './hero.css'
+import Particle from './particles/Particles'
 
 const Hero = () => {
   return (
-    <section id="hero"><h2>Hero</h2></section>
+    <>
+    
+    <section id="hero">
+        <Particle/> 
+    </section>
+    </>
+    
   )
 }
 
