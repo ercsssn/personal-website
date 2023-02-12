@@ -24,7 +24,7 @@ const Particle = () => {
         {
             background: {
                 color: {
-                    value: "#0d47a1",
+                    value: "#fff",
                 },
             },
             fpsLimit: 120,
@@ -32,11 +32,11 @@ const Particle = () => {
                 events: {
                     onClick: {
                         enable: true,
-                        mode: "push",
+                        mode: "repulse",
                     },
                     onHover: {
                         enable: true,
-                        mode: "repulse",
+                        mode: "grab",
                     },
                     resize: true,
                 },
@@ -52,10 +52,10 @@ const Particle = () => {
             },
             particles: {
                 color: {
-                    value: "#ffffff",
+                    value: "#000",
                 },
                 links: {
-                    color: "#ffffff",
+                    color: "#000",
                     distance: 150,
                     enable: true,
                     opacity: 0.5,
@@ -92,7 +92,10 @@ const Particle = () => {
                 },
             },
             detectRetina: true,
-            fullScreen: { enable: false },
+            fullScreen: { 
+                enable: false,
+                zIndex: -1
+             },
 
         }
     }
