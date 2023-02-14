@@ -3,13 +3,10 @@ import Particle from './particles/Particles'
 
 const Hero = () => {
   return (
-    <>
-    
-    <section id="hero">
-        <Particle/> 
-    </section>
-    </>
-    
+    <div className='particles-container'>
+      <Particle/>
+    </div>
+         
   )
 }
 
