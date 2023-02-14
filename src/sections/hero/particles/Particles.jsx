@@ -24,7 +24,7 @@ const Particle = () => {
         {
             background: {
                 color: {
-                    value: "#fff",
+                    value: "#000",
                 },
             },
             fpsLimit: 120,
@@ -52,17 +52,17 @@ const Particle = () => {
             },
             particles: {
                 color: {
-                    value: "#000",
+                    value: "#fff",
                 },
                 links: {
-                    color: "#000",
+                    color: "#fff",
                     distance: 150,
                     enable: true,
                     opacity: 0.5,
                     width: 1,
                 },
                 collisions: {
-                    enable: true,
+                    enable: false,
                 },
                 move: {
                     directions: "none",
@@ -71,7 +71,7 @@ const Particle = () => {
                         default: "bounce",
                     },
                     random: false,
-                    speed: 6,
+                    speed: 3,
                     straight: false,
                 },
                 number: {
@@ -95,8 +95,10 @@ const Particle = () => {
             fullScreen: { 
                 enable: false,
                 zIndex: -1
-             },
-
+            },
+            style: {
+                position: 'absolute',
+            }
         }
     }
     />
