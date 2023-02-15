@@ -8,14 +8,14 @@ import Faqs from './sections/faqs/Faqs';
 import Contact from './sections/contact/Contact';
 import Footer from './sections/footer/Footer';
 import FloatingNav from './sections/floating-nav/FloatingNav';
-import Hero from './sections/hero/Hero';
+// import Hero from './sections/hero/Hero';
 
 const App = () => {
 
   return (
     <main>
       <Navbar/>
-      <Hero/>
+      {/* <Hero/> */}
       <Header/>
       <About/>
       <Services/>
