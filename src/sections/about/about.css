@@ -47,3 +47,11 @@
 .card.card.about__card h5{
     margin: 1rem 0;
 }
+
+.about__right p {
+    margin-bottom: 0.8rem;
+}
+
+.about__right .btn{
+    margin-top: 2.5rem;
+}
