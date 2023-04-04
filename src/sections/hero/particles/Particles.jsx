@@ -45,9 +45,14 @@ const Particle = () => {
                         quantity: 4,
                     },
                     repulse: {
-                        distance: 200,
+                        distance: 220,
                         duration: 0.4,
                     },
+                    grab: {
+                        distance: 220,
+                        duration: 0.4,
+                    },
+                    
                 },
             },
             particles: {
@@ -56,10 +61,10 @@ const Particle = () => {
                 },
                 links: {
                     color: "#fff",
-                    distance: 150,
+                    distance: 180,
                     enable: true,
                     opacity: 0.5,
-                    width: 1,
+                    width: 2,
                 },
                 collisions: {
                     enable: false,
@@ -88,7 +93,7 @@ const Particle = () => {
                     type: "circle",
                 },
                 size: {
-                    value: { min: 1, max: 5 },
+                    value: { min: 1, max: 7 },
                 },
             },
             detectRetina: true,
