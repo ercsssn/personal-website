@@ -11,7 +11,7 @@ const About = () => {
       <div className="container about__container">
         <div className="about__left">
           <div className="about__portrait">
-            <img src={AboutImage} alt="about-image" />
+            <img src={AboutImage} alt="about" />
           </div>
         </div>
         <div className="about__right">
@@ -33,7 +33,7 @@ const About = () => {
           <p>
             Hi, my name is John Ericsson from Pasay City, Philippines. I'm a frontend web developer with a Bachelor's degree in Aeronautical Engineering. My top priority is to get your business online the right way, giving you industry-standard design and all the functionality you need to operate smoothly online. Get in touch today with the details of your project, let's get started! Checkout my resume below!
           </p>
-          <a href={CV} download className='btn primary'>Download CV
+          <a href={CV} download="JohnEricssonRobariosDev-CV.pdf" className='btn primary'>Download CV
           <HiDownload/></a>
         </div>
       </div>
