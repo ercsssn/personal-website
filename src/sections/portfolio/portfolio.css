@@ -1,3 +1,19 @@
+.portfolio__categories{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.btn.cat__btn{
+    text-transform: capitalize;
+    transition: var(--transition);
+}
+
+.btn.cat__btn:hover{
+    transform: translateY(0);
+}
+
 .portfolio__projects {
     margin-top: 3rem;
     display: grid;
