@@ -61,7 +61,8 @@ section:nth-child(odd){
     background: var(--color-white);
 }
 
-section > h2 {
+section > h2,
+section > h5 {
     text-align: center;
 }
 
