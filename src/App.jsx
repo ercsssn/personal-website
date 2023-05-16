@@ -7,9 +7,9 @@ import Portfolio from './sections/portfolio/Portfolio';
 // import Faqs from './sections/faqs/Faqs';
 import Contact from './sections/contact/Contact';
 import Footer from './sections/footer/Footer';
-import FloatingNav from './sections/floating-nav/FloatingNav';
+// import FloatingNav from './sections/floating-nav/FloatingNav';
 import Hero from './sections/hero/Hero';
-// import Skills from './sections/skills/Skills';
+import Skills from './sections/skills/Skills';
 
 const App = () => {
 
@@ -19,14 +19,14 @@ const App = () => {
       <Hero/>
       <Header/>
       <About/>
-      {/* <Skills/> */}
       <Services/>
+      <Skills/>
       <Portfolio/>
       {/* <Testimonials/> */}
       {/* <Faqs/> */}
       <Contact/>
       <Footer/>
-      <FloatingNav/>
+      {/* <FloatingNav/> */}
     </main>
   )
 }
