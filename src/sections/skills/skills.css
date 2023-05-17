@@ -1,3 +1,53 @@
-.container {
-    
+.skills__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;    
+}
+
+#skills h2 {
+    margin-bottom: 3rem;
+}
+
+.skills__container > div {
+    background: var(--color-white);
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+/* .skills__container > div:hover {
+    background: transparent;
+    border-color: var(--color-white);
+    cursor: default;
+} */
+
+.skills__container > div h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-black);
+}
+
+.skills__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+}
+
+.skills__content a {
+    color: black;
+}
+
+.skill__detail {
+    display: flex;
+    gap: 1rem;
+}
+
+.skill__detail h4 {
+    color: var(--color-black);
+}
+
+.skill__detail-icon {
+    margin-top: 6px;
+    color: var(--color-primary);
 }
