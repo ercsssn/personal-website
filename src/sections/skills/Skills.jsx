@@ -12,7 +12,16 @@ const Skills = () => {
             <h3>Frontend Development</h3>
             <div className="skills__content">
                 {
-                  frontendSkills.map(skill => <article className='skill__detail'>{skill.icon} <h4>{skill.name}</h4> <small className='text-light'>{skill.years}</small></article>)
+                  frontendSkills.map(skill => 
+                  <article> 
+                    <a className='skill__detail' href={skill.link}> 
+                      <div className='skill__detail-icon'>{skill.icon}</div> 
+                      <div>
+                        <h4>{skill.name}</h4> 
+                        <small className='text-light'>{skill.years}</small>
+                      </div>
+                    </a>
+                  </article>)
                 }
             </div>
           </div>
@@ -20,7 +29,16 @@ const Skills = () => {
             <h3>Backend Development</h3>
             <div className="skills__content">
                 {
-                  backendSkills.map(skill => <article className='skill__detail'>{skill.icon} <h4>{skill.name}</h4> <small className='text-light'>{skill.years}</small></article>)
+                  backendSkills.map(skill => 
+                  <article> 
+                    <a className='skill__detail' href={skill.link}> 
+                      <div className='skill__detail-icon'>{skill.icon}</div> 
+                      <div>
+                        <h4>{skill.name}</h4> 
+                        <small className='text-light'>{skill.years}</small>
+                      </div>
+                    </a>
+                  </article>)
                 }
             </div>
           </div>
