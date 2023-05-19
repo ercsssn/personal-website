@@ -10,6 +10,7 @@ import Footer from './sections/footer/Footer';
 // import FloatingNav from './sections/floating-nav/FloatingNav';
 import Hero from './sections/hero/Hero';
 import Skills from './sections/skills/Skills';
+import Modal from './components/Modal';
 
 const App = () => {
 
@@ -26,6 +27,7 @@ const App = () => {
       {/* <Faqs/> */}
       <Contact/>
       <Footer/>
+      <Modal/>
       {/* <FloatingNav/> */}
     </main>
   )
