@@ -15,3 +15,8 @@ export const ModalProvider = ({children}) => {
 
     return <ModalContext.Provider value={{ showModal, showModalHandler, closeModalHandler }}>{children}</ModalContext.Provider>
 }
+
+//Custom Hook to consume the modal context anywhere in the project
+export const useModalContext = () => {
+    return useContext(ModalContext);
+}
