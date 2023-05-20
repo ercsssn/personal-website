@@ -11,6 +11,7 @@ import Footer from './sections/footer/Footer';
 import Hero from './sections/hero/Hero';
 import Skills from './sections/skills/Skills';
 import Modal from './components/Modal';
+import Theme from './sections/theme/Theme';
 
 const App = () => {
 
@@ -28,6 +29,7 @@ const App = () => {
       <Contact/>
       <Footer/>
       <Modal/>
+      <Theme/>
       {/* <FloatingNav/> */}
     </main>
   )
