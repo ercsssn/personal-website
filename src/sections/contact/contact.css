@@ -13,7 +13,7 @@
 }
 
 .contact__option {
-    background: var(--color-light);
+    background: var(--color-white);
     padding: 1.2rem;
     border-radius: 1.2rem;
     text-align: center;
@@ -39,6 +39,7 @@
     margin-top: 0.7rem;
     display: inline-block;
     font-size: 0.8rem;
+    color: var(--color-black);
 }
 
 /* Form Styling */
@@ -56,4 +57,19 @@ input, textarea {
     background: transparent;
     border: 2px solid var(--color-primary);
     resize: none;
+}
+
+/* Media Queries for Tablets */
+@media screen and (max-width: 1024px) {
+    .container.contact__container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+/* Media Queries for Phones */
+@media screen and (max-width: 600px) {
+    .container.contact__container {
+        width: var(--container-width-md);
+    }
 }
