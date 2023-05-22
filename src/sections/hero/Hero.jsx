@@ -1,5 +1,5 @@
 import './hero.css'
-import Particle from './particles/Particles'
+import Particle from './particles/Particle'
 import PersonalLogo from '../../assets/jer-logo.png'
 
 const Hero = () => {
