@@ -13,7 +13,7 @@ const Skills = () => {
             <div className="skills__content">
                 {
                   frontendSkills.map(skill => 
-                  <article> 
+                  <article key={skill.id}> 
                     <a className='skill__detail' href={skill.link}> 
                       <div className='skill__detail-icon'>{skill.icon}</div> 
                       <div>
@@ -30,7 +30,7 @@ const Skills = () => {
             <div className="skills__content">
                 {
                   backendSkills.map(skill => 
-                  <article> 
+                  <article key={skill.id}> 
                     <a className='skill__detail' href={skill.link}> 
                       <div className='skill__detail-icon'>{skill.icon}</div> 
                       <div>
