@@ -88,4 +88,9 @@
         width: var(--container-width-md);
         padding: 3rem 1.5rem;
     }
+
+    .theme__primary-colors {
+        gap: 0.6rem;
+    }
+
 }
