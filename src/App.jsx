@@ -12,11 +12,14 @@ import Hero from './sections/hero/Hero';
 import Skills from './sections/skills/Skills';
 import Modal from './components/Modal';
 import Theme from './sections/theme/Theme';
+import { useThemeContext } from './context/theme-context';
 
 const App = () => {
+  const {themeState} = useThemeContext();
+
 
   return (
-    <main>
+    <main className={`${themeState.primary} ${themeState.background}`}>
       <Navbar/>
       <Hero/>
       <Header/>
