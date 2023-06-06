@@ -4,7 +4,7 @@ import themeReducer from "./themeReducer";
 
 export const ThemeContext = createContext();
 
-const initialThemeState = {primary: 'color-1', background: 'bg-1'}
+const initialThemeState = JSON.parse(localStorage.getItem('themeSettings')) || {primary: 'color-1', background: 'bg-1'}
 
 export const ThemeProvider = ({children}) => {
     const [themeState, dispatchTheme] = useReducer(themeReducer, initialThemeState);
@@ -13,5 +13,17 @@ export const ThemeProvider = ({children}) => {
         dispatchTheme({type: buttonClassName})
     }
 
-    return <ThemeContext.Provider value={{ themeState, themehandler }}>{children}</ThemeContext.Provider>
+    console.log(themeState);
+
+    //Save theme settings to local storage
+    useEffect(() =>{
+        localStorage.setItem('themeSettings', JSON.stringify(themeState))
+    })
+
+    return <ThemeContext.Provider value={{ themeState, themeHandler }}>{children}</ThemeContext.Provider>
+}
+
+//custom hook to use theme context wherever in the project
+export const useThemeContext = () => {
+    return useContext(ThemeContext);
 }
