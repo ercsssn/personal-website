@@ -4,7 +4,7 @@ import PersonalLogo from '../../assets/jer-logo.png'
 
 const Hero = () => {
   return (
-    <div className='particles-container'>
+    <div id='hero' className='particles-container'>
       <Particle/>
       <div className='hero__title'>
         <div className='hero__logo'>
