@@ -1,4 +1,4 @@
-import {AiFillHome} from 'react-/ai'
+import {AiFillHome} from 'react-icons/ai'
 import {BsPersonFill} from 'react-icons/bs'
 import {MdHomeRepairService} from 'react-icons/md'
 import {AiFillAppstore} from 'react-icons/ai'
