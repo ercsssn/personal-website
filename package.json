@@ -11,6 +11,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-scripts": "5.0.1",
+    "react-scrollspy": "^3.4.3",
     "react-tsparticles": "^2.9.0",
     "react-ui-scrollspy": "^2.3.0",
     "tsparticles": "^2.9.0",
