@@ -20,35 +20,35 @@ const App = () => {
 
   const {themeState} = useThemeContext();
 
-  const [showFloatingNav, setShowFloatingNav] = useState(true);
-  const [siteYPosition, setSiteYPosition] = useState(0);
+  // const [showFloatingNav, setShowFloatingNav] = useState(true);
+  // const [siteYPosition, setSiteYPosition] = useState(0);
 
-  const showFloatingNavHandler = () => {
-    setShowFloatingNav(true);
-  }
+  // const showFloatingNavHandler = () => {
+    // setShowFloatingNav(true);
+  // }
 
-  const hideFloatingNavHandler = () => {
-    setShowFloatingNav(false);
-  }
+  // const hideFloatingNavHandler = () => {
+    // setShowFloatingNav(false);
+  // }
 
-  //check if floating nav should be shown or hidden
-  const floatingNavToggleHandler = () => {
-    //check if we scrolled up or down at least 20px
-    if(siteYPosition < (mainRef?.current?.getBoundingClientRect().y - 20) || siteYPosition > (mainRef?.current?.getBoundingClientRect().y + 20)){
-      showFloatingNavHandler();
-    }else{
-      hideFloatingNavHandler();
-    }
+  // //check if floating nav should be shown or hidden
+  // const floatingNavToggleHandler = () => {
+    // //check if we scrolled up or down at least 20px
+    // // if(siteYPosition < (mainRef?.current?.getBoundingClientRect().y - 20) || siteYPosition > (mainRef?.current?.getBoundingClientRect().y + 20)){
+      // showFloatingNavHandler();
+    // }else{
+      // hideFloatingNavHandler();
+    // }
 
-    setSiteYPosition(mainRef?.current?.getBoundingClientRect().y);
-  }
+    // setSiteYPosition(mainRef?.current?.getBoundingClientRect().y);
+  // }
 
-  useEffect(() => {
-    const checkYPosition = setInterval(floatingNavToggleHandler, 1000);
+  // useEffect(() => {
+    // const checkYPosition = setInterval(floatingNavToggleHandler, 800);
 
-    //cleanup function
-    return () => clearInterval(checkYPosition);
-  }, [siteYPosition, floatingNavToggleHandler]);
+    // //cleanup function
+    // return () => clearInterval(checkYPosition);
+  // }, [siteYPosition, floatingNavToggleHandler]);
 
   const [showNavBar, setShowNavBar] = useState(true);
   const [currentYPosition, setCurrentYPosition] = useState(0);
@@ -95,7 +95,8 @@ const App = () => {
       <Footer/>
       <Modal/>
       <Theme/>
-      {showFloatingNav && <FloatingNav/>}
+      {/* {showFloatingNav && <FloatingNav/>} */}
+      <FloatingNav/>
       
     </main>
   )
