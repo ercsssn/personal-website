@@ -50,9 +50,39 @@ const App = () => {
     return () => clearInterval(checkYPosition);
   }, [siteYPosition, floatingNavToggleHandler]);
 
+  const [showNavBar, setShowNavBar] = useState(true);
+  const [currentYPosition, setCurrentYPosition] = useState(0);
+
+  const showNavBarHandler = () => {
+    setShowNavBar(true);
+  }
+
+  const hideNavBarHandler = () => {
+    setShowNavBar(false);
+  }
+
+  //check if floating nav should be shown or hidden
+  const navBarToggleHandler = () => {
+    //check if we scrolled up or down at least 20px
+    if(currentYPosition !== 0 ){
+      showNavBarHandler();
+    }else{
+      hideNavBarHandler();
+    }
+
+    setCurrentYPosition(mainRef?.current?.getBoundingClientRect().y);
+  }
+
+  useEffect(() => {
+    const checkYPosition = setInterval(navBarToggleHandler, 100);
+
+    //cleanup function
+    return () => clearInterval(checkYPosition);
+  }, [currentYPosition, navBarToggleHandler]);
+
   return (
     <main className={`${themeState.primary} ${themeState.background}`} ref={mainRef}>
-      <Navbar/>
+      {showNavBar && <Navbar/>}
       <Hero/>
       <Header/>
       <About/>
