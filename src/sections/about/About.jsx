@@ -4,10 +4,17 @@ import {HiDownload} from 'react-icons/hi'
 import Card from '../../components/Card'
 import data from './data'
 import './about.css'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  }, [])
+
   return (
-    <section id="about">
+    <section id="about" data-aos="fade-in">
       <div className="container about__container">
         <div className="about__left">
           <div className="about__portrait">
@@ -28,12 +35,12 @@ const About = () => {
             }
           </div>
           <p>
-            Building projects my clients love have always been my passion. Being in the web development industry for over 2 years and serving more than 70 happy clients worldwide, I'm always motivated to do more!
+            Building projects my clients love have always been my passion. Being in the web development industry for over 2 years and serving happy clients, I'm always motivated to do more!
           </p>
           <p>
-            Hi, my name is John Ericsson from Pasay City, Philippines. I'm a frontend web developer with a Bachelor's degree in Aeronautical Engineering. My top priority is to get your business online the right way, giving you industry-standard design and all the functionality you need to operate smoothly online. Get in touch today with the details of your project, let's get started! Checkout my resume below!
+            Deeply invested in the life-long learning mentality, I'm a frontend web developer who carries a keen eye for design in an user-first approach. My top priority is to get your business online the right way, giving you industry-standard design and all the functionality you need to operate smoothly online and from my background as an aeronautical engineer, I'm well acquainted to bringing out solutions to complex problems. Get in touch today with the details of your project, let's get started! Checkout my resume below!
           </p>
-          <a href={CV} download="JohnEricssonRobariosDev-CV.pdf" className='btn primary'>Download CV
+          <a href={CV} download="JohnEricssonRobarios-CV.pdf" className='btn primary'>Download CV
           <HiDownload/></a>
         </div>
       </div>
