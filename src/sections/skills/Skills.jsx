@@ -1,13 +1,20 @@
 import './skills.css'
 import {frontendSkills, backendSkills} from './data'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 
 const Skills = () => {
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  }, [])
+
   return (
     <section id='skills'>
         <h5>What Skills I Have</h5>
         <h2>My Experience</h2>
         
-        <div className="container skills__container">
+        <div className="container skills__container" data-aos="fade-up">
           <div className="skills__frontend">
             <h3>Frontend Development</h3>
             <div className="skills__content">

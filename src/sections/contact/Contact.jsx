@@ -4,8 +4,15 @@ import { RiMessengerLine } from 'react-icons/ri'
 import { FaViber } from 'react-icons/fa'
 import { useRef } from 'react'
 import emailjs from 'emailjs-com'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 
 const Contact = () => {
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  }, [])
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -20,7 +27,7 @@ const Contact = () => {
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
       <div className="container contact__container">
-        <div className="contact__options">
+        <div className="contact__options" data-aos="fade-up">
           <article className="contact__option">
             <MdOutlineEmail className='contact__option-icon'/>
             <h4>Email</h4>
