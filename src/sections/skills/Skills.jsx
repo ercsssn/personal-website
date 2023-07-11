@@ -25,7 +25,7 @@ const Skills = () => {
                       <div className='skill__detail-icon'>{skill.icon}</div> 
                       <div>
                         <h4>{skill.name}</h4> 
-                        <small>{skill.years}</small>
+                        {/* <small>{skill.years}</small> */}
                       </div>
                     </a>
                   </article>)
