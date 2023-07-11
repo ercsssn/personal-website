@@ -21,7 +21,7 @@ const Skills = () => {
                 {
                   frontendSkills.map(skill => 
                   <article key={skill.id}> 
-                    <a className='skill__detail' href={skill.link}> 
+                    <a className='skill__detail' href={skill.link} target="_blank" rel="noopener noreferrer"> 
                       <div className='skill__detail-icon'>{skill.icon}</div> 
                       <div>
                         <h4>{skill.name}</h4> 
@@ -38,7 +38,7 @@ const Skills = () => {
                 {
                   backendSkills.map(skill => 
                   <article key={skill.id}> 
-                    <a className='skill__detail' href={skill.link}> 
+                    <a className='skill__detail' href={skill.link} target="_blank" rel="noopener noreferrer"> 
                       <div className='skill__detail-icon'>{skill.icon}</div> 
                       <div>
                         <h4>{skill.name}</h4> 
